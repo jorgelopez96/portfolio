@@ -1,0 +1,65 @@
+export const es = {
+  nav: {
+    skills: "Skills",
+    projects: "Proyectos",
+    education: "Formación",
+    experience: "Experiencia",
+    contact: "Contacto",
+  },
+  hero: {
+    greeting: "Hola, soy",
+    role: "FullStack Developer",
+    tagline: "Construyo interfaces que no solo funcionan — se sienten.",
+    cta: "Ver proyectos",
+    ctaSecondary: "Contactame",
+  },
+  skills: { title: "Skills" },
+  projects: {
+    title: "Proyectos",
+    status: { deployed: "En producción", inProgress: "En desarrollo", paused: "Pausado" },
+    items: {
+      cuidaTuWallet: {
+        name: "CuidaTuWallet",
+        description: "App de finanzas personales con autenticación, dashboard con gráficos, seguimiento de gastos e ingresos y gestión de tarjetas de crédito.",
+      },
+      osidisTech: {
+        name: "OsidisTech Ecommerce",
+        description: "Tienda online de hardware con carrito de compras, gestión de stock y pagos integrados.",
+      },
+    },
+  },
+  education: {
+    title: "Formación",
+    diplomaBtn: "Ver certificado",
+    noCertificate: "Aprobado",
+    modalLinkBtn: "Abrir en CoderHouse ↗",
+    modalClose: "Cerrar",
+    degrees: {
+      devWeb: "Desarrollo Web",
+      javascript: "JavaScript",
+      reactJs: "React JS",
+      backend1: "Backend I",
+      devWebUdemy: "Desarrollo Web",
+    },
+  },
+  experience: {
+    title: "Experiencia",
+    empty: "Próximamente — actualmente construyendo mi primer rol profesional.",
+  },
+  contact: {
+    title: "Contacto",
+    headline1: "Hagámoslo realidad,",
+    headline2: "hoy mismo.",
+    location: "Ubicación",
+    labelName: "Nombre",
+    labelEmail: "Email",
+    labelMessage: "Mensaje",
+    placeholderName: "Tu nombre completo",
+    placeholderEmail: "tu@email.com",
+    placeholderMessage: "Contame sobre tu proyecto...",
+    submitBtn: "Enviar propuesta",
+    sending: "Enviando...",
+    sent: "¡Mensaje enviado!",
+    errorMsg: "Algo salió mal. Intentá de nuevo.",
+  },
+};
