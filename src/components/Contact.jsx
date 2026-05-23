@@ -50,12 +50,16 @@ export default function Contact() {
         <div className="mt-14 grid md:grid-cols-2 gap-16 items-start">
           {/* Left */}
           <div>
-            <h3 className="font-display font-extrabold text-4xl md:text-5xl text-white leading-tight mb-6">
-              {t.contact.headline1}<br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-violet-400">
-                {t.contact.headline2}
-              </span>
+            <h3 className="font-display font-extrabold text-4xl md:text-5xl text-white leading-tight mb-4">
+              {t.contact.headline1}
             </h3>
+            <div className="flex items-center gap-4 mb-6">
+              <div className="h-px flex-1 bg-gradient-to-r from-purple-600/60 to-transparent" />
+              <div className="w-2 h-2 rounded-full bg-purple-500 flex-shrink-0" />
+            </div>
+            <p className="text-purple-300/80 text-lg italic font-light leading-relaxed mb-2">
+              &ldquo;{t.contact.headline2}&rdquo;
+            </p>
             <p className="text-gray-500 font-mono text-xs tracking-widest uppercase mb-3">// {t.contact.location}</p>
             <p className="font-display font-bold text-white text-lg mb-10">Buenos Aires, Argentina</p>
             <div className="flex gap-3">

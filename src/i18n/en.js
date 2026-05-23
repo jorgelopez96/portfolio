@@ -47,8 +47,8 @@ export const en = {
   },
   contact: {
     title: "Contact",
-    headline1: "Let's make it happen,",
-    headline2: "today.",
+    headline1: "Let's work together",
+    headline2: "every great product starts with a conversation.",
     location: "Location",
     labelName: "Name",
     labelEmail: "Email",

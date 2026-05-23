@@ -47,8 +47,8 @@ export const es = {
   },
   contact: {
     title: "Contacto",
-    headline1: "Hagámoslo realidad,",
-    headline2: "hoy mismo.",
+    headline1: "Trabajemos juntos",
+    headline2: "cada gran producto empieza con una conversación.",
     location: "Ubicación",
     labelName: "Nombre",
     labelEmail: "Email",
