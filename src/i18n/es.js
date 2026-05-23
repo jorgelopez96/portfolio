@@ -8,8 +8,7 @@ export const es = {
   },
   hero: {
     greeting: "Hola, soy",
-    role: "FullStack Developer",
-    tagline: "Construyo interfaces que no solo funcionan — se sienten.",
+    tagline: "Construyo SPAs con arquitectura modular, código limpio y foco en la experiencia del usuario. Desde el primer commit hasta producción.",
     cta: "Ver proyectos",
     ctaSecondary: "Contactame",
   },
@@ -20,11 +19,11 @@ export const es = {
     items: {
       cuidaTuWallet: {
         name: "CuidaTuWallet",
-        description: "App de finanzas personales con autenticación, dashboard con gráficos, seguimiento de gastos e ingresos y gestión de tarjetas de crédito.",
+        description: "SPA de finanzas personales con dashboard, gráficos SVG, gestión de cuotas de tarjetas, Firebase Auth y modo claro/oscuro.",
       },
       osidisTech: {
         name: "OsidisTech Ecommerce",
-        description: "Tienda online de hardware con carrito de compras, gestión de stock y pagos integrados.",
+        description: "Tienda de hardware con catálogo dinámico, carrito de compras, stock en tiempo real y checkout integrado.",
       },
     },
   },

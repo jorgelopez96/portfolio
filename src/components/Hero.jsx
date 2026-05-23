@@ -12,16 +12,13 @@ export default function Hero() {
           <p className="font-mono text-purple-400 text-xs tracking-[0.4em] uppercase mb-8 animate-fade-in">
             {t.hero.greeting}
           </p>
-          <h1 className="font-display font-extrabold leading-[1.05] mb-6 animate-slide-up">
+          <h1 className="font-display font-extrabold leading-[1.05] mb-8 animate-slide-up">
             <span className="block text-5xl md:text-6xl lg:text-7xl text-white">Jorge</span>
             <span className="block text-5xl md:text-6xl lg:text-7xl text-white">Manuel</span>
             <span className="block text-5xl md:text-6xl lg:text-7xl text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-violet-400 to-blue-400">
               López
             </span>
           </h1>
-          <p className="font-mono text-xs text-gray-500 tracking-[0.25em] uppercase mb-5 animate-slide-up delay-100">
-            {t.hero.role}
-          </p>
           <p className="text-gray-300 text-base md:text-lg leading-relaxed mb-10 max-w-md animate-slide-up delay-200 font-light">
             {t.hero.tagline}
           </p>

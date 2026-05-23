@@ -8,8 +8,7 @@ export const en = {
   },
   hero: {
     greeting: "Hi, I'm",
-    role: "FullStack Developer",
-    tagline: "I build interfaces that don't just work — they feel right.",
+    tagline: "I build modular SPAs with clean code and a sharp focus on user experience. From the first commit to production.",
     cta: "View projects",
     ctaSecondary: "Contact me",
   },
@@ -20,11 +19,11 @@ export const en = {
     items: {
       cuidaTuWallet: {
         name: "CuidaTuWallet",
-        description: "Personal finance app with authentication, charts dashboard, expense & income tracking and credit card management.",
+        description: "Personal finance SPA with dashboard, SVG charts, credit card installment tracking, Firebase Auth and dark/light mode.",
       },
       osidisTech: {
         name: "OsidisTech Ecommerce",
-        description: "Hardware online store with shopping cart, stock management and integrated payments.",
+        description: "Hardware store with dynamic catalog, shopping cart, real-time stock management and integrated checkout.",
       },
     },
   },
