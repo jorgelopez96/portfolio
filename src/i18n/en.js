@@ -3,12 +3,13 @@ export const en = {
     skills: "Skills",
     projects: "Projects",
     education: "Education",
-    experience: "Experience",
+    experience: "About me",
     contact: "Contact",
   },
   hero: {
     greeting: "Hi, I'm",
-    tagline: "I build modular SPAs with clean code and a sharp focus on user experience. From the first commit to production.",
+    available: "Open to work",
+    tagline: "I build modular SPAs with maintainable code and a sharp focus on user experience.",
     cta: "View projects",
     ctaSecondary: "Contact me",
   },
@@ -19,11 +20,11 @@ export const en = {
     items: {
       cuidaTuWallet: {
         name: "CuidaTuWallet",
-        description: "Personal finance SPA with dashboard, SVG charts, credit card installment tracking, Firebase Auth and dark/light mode.",
+        description: "Personal finance SPA with authentication, custom SVG charts dashboard, expense & income tracking, credit card installment management and auto-expiring sessions. Modular architecture with React Portals and continuous deploy on Vercel.",
       },
       osidisTech: {
         name: "OsidisTech Ecommerce",
-        description: "Hardware store with dynamic catalog, shopping cart, real-time stock management and integrated checkout.",
+        description: "Hardware store with dynamic catalog, shopping cart, real-time stock management and integrated checkout. Reusable components, price formatting with Intl.NumberFormat and state management via Context API.",
       },
     },
   },
@@ -42,8 +43,12 @@ export const en = {
     },
   },
   experience: {
-    title: "Experience",
-    empty: "Coming soon — currently building my first professional role.",
+    title: "About me",
+    bio: [
+      "Frontend Developer with over a year and a half building SPAs with React. Modular architecture, maintainable code and focus on user experience.",
+      "I developed real projects on my own, all deployed and running in production.",
+      "Looking for my first professional role in a team where I can grow and contribute from day one. Available in Buenos Aires, remote or on-site.",
+    ],
   },
   contact: {
     title: "Contact",

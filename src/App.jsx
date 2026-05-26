@@ -1,10 +1,10 @@
 import { LanguageProvider } from "./context/LanguageContext";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
+import Experience from "./components/Experience";
 import Skills from "./components/Skills";
 import Education from "./components/Education";
 import Projects from "./components/Projects";
-import Experience from "./components/Experience";
 import Contact from "./components/Contact";
 import WhatsAppButton from "./components/WhatsAppButton";
 import SectionDivider from "./components/SectionDivider";
@@ -19,13 +19,13 @@ export default function App() {
           <Navbar />
           <Hero />
           <SectionDivider />
+          <Experience />
+          <SectionDivider />
           <Skills />
           <SectionDivider />
           <Education />
           <SectionDivider />
           <Projects />
-          <SectionDivider />
-          <Experience />
           <SectionDivider />
           <Contact />
           <WhatsAppButton />

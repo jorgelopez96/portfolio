@@ -7,7 +7,7 @@ const LINES = [
   { cmd: null, delay: 600 },
   ...skills.map((s, i) => ({ cmd: `  ✓ ${s.name}`, delay: 700 + i * 180 })),
   { cmd: null, delay: 700 + skills.length * 180 + 100 },
-  { cmd: `jorge@portfolio:~$ echo "Siempre aprendiendo..."`, delay: 700 + skills.length * 180 + 300 },
+  { cmd: `jorge@portfolio:~$ open https://jorgelopez.dev`, delay: 700 + skills.length * 180 + 300 },
 ];
 
 export default function Skills() {
@@ -76,7 +76,7 @@ export default function Skills() {
           </div>
 
           {/* Skills grid */}
-          <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
+          <div className="grid grid-cols-2 gap-3">
             {skills.map((skill) => (
               <div key={skill.name}
                 className="flex items-center gap-3 p-3 rounded-xl border border-white/[0.06] bg-white/[0.02] hover:border-purple-500/40 hover:bg-purple-900/10 transition-all group cursor-default">

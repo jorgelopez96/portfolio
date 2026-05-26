@@ -3,12 +3,13 @@ export const es = {
     skills: "Skills",
     projects: "Proyectos",
     education: "Formación",
-    experience: "Experiencia",
+    experience: "Sobre mí",
     contact: "Contacto",
   },
   hero: {
     greeting: "Hola, soy",
-    tagline: "Construyo SPAs con arquitectura modular, código limpio y foco en la experiencia del usuario. Desde el primer commit hasta producción.",
+    available: "Disponible",
+    tagline: "Construyo SPAs con arquitectura modular, código mantenible y foco en la experiencia del usuario.",
     cta: "Ver proyectos",
     ctaSecondary: "Contactame",
   },
@@ -19,11 +20,11 @@ export const es = {
     items: {
       cuidaTuWallet: {
         name: "CuidaTuWallet",
-        description: "SPA de finanzas personales con dashboard, gráficos SVG, gestión de cuotas de tarjetas, Firebase Auth y modo claro/oscuro.",
+        description: "SPA de finanzas personales con autenticación, dashboard con gráficos SVG personalizados, seguimiento de gastos e ingresos, gestión de cuotas de tarjetas y sesión con expiración automática. Arquitectura modular con React Portals y deploy continuo en Vercel.",
       },
       osidisTech: {
         name: "OsidisTech Ecommerce",
-        description: "Tienda de hardware con catálogo dinámico, carrito de compras, stock en tiempo real y checkout integrado.",
+        description: "E-commerce de hardware con catálogo dinámico, carrito de compras, gestión de stock en tiempo real y checkout integrado. Componentes reutilizables, formateo de precios con Intl.NumberFormat y manejo de estado por Context API.",
       },
     },
   },
@@ -42,8 +43,12 @@ export const es = {
     },
   },
   experience: {
-    title: "Experiencia",
-    empty: "Próximamente — actualmente construyendo mi primer rol profesional.",
+    title: "Sobre mí",
+    bio: [
+      "Frontend Developer con más de un año y medio construyendo SPAs con React. Arquitectura modular, código mantenible y foco en la experiencia del usuario.",
+      "Desarrollé proyectos reales de forma autodidacta, todos deployados y en producción.",
+      "Busco mi primer rol profesional en un equipo donde pueda crecer y aportar desde el día uno. Disponible en Buenos Aires, remoto o presencial.",
+    ],
   },
   contact: {
     title: "Contacto",

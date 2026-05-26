@@ -20,7 +20,7 @@ export default function Navbar() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  const links = ["skills", "education", "projects", "experience", "contact"];
+  const links = ["experience", "skills", "education", "projects", "contact"];
 
   return (
     <nav className={`fixed top-0 w-full z-50 transition-all duration-300 ${scrolled ? "bg-[#080810]/85 backdrop-blur-md border-b border-purple-900/20" : "bg-transparent"}`}>
@@ -28,7 +28,6 @@ export default function Navbar() {
         <button onClick={scrollToTop} className="font-display text-white text-xl font-bold tracking-tight hover:text-purple-400 transition-colors cursor-pointer">
           JL<span className="text-purple-400">.</span>
         </button>
-
         <ul className="hidden md:flex gap-8">
           {links.map((l) => (
             <li key={l}>
@@ -38,18 +37,15 @@ export default function Navbar() {
             </li>
           ))}
         </ul>
-
         <div className="flex items-center gap-3">
           <a href="/Jorge_Lopez_CV.pdf" download
-            className="hidden md:flex items-center gap-2 text-xs font-mono text-purple-400 border border-purple-700/60 px-3 py-1.5 rounded-full hover:bg-purple-900/20 hover:border-purple-500 transition-all group">
+            className="hidden md:flex items-center gap-2 text-xs font-mono text-purple-400 border border-purple-700/60 px-3 py-1.5 rounded-full hover:bg-purple-900/20 hover:border-purple-500 transition-all">
             <span>CV</span>
             <DownloadIcon />
           </a>
-
           <button onClick={toggleLang} className="text-xs font-mono border border-purple-700 text-purple-400 px-3 py-1 rounded-full hover:bg-purple-900/30 transition-colors">
             {lang === "es" ? "EN" : "ES"}
           </button>
-
           <button className="md:hidden text-gray-400" onClick={() => setMenuOpen(!menuOpen)}>
             <span className="block w-5 h-px bg-current mb-1" />
             <span className="block w-5 h-px bg-current mb-1" />
@@ -57,7 +53,6 @@ export default function Navbar() {
           </button>
         </div>
       </div>
-
       {menuOpen && (
         <div className="md:hidden bg-[#080810]/95 border-t border-purple-900/20 px-6 py-4 flex flex-col gap-4">
           {links.map((l) => (
@@ -68,8 +63,7 @@ export default function Navbar() {
           ))}
           <a href="/Jorge_Lopez_CV.pdf" download
             className="flex items-center gap-2 text-xs font-mono text-purple-400 border border-purple-700/60 px-3 py-1.5 rounded-full w-fit hover:bg-purple-900/20 transition-all">
-            <span>CV</span>
-            <DownloadIcon />
+            <span>CV</span><DownloadIcon />
           </a>
         </div>
       )}
