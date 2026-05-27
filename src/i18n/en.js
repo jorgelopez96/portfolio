@@ -52,8 +52,8 @@ export const en = {
   },
   contact: {
     title: "Contact",
-    headline1: "Let's work together",
-    headline2: "every great product starts with a conversation.",
+    headline1: "Got a project in mind?",
+    headline2: "I'm available to join a team or take on freelance projects. Let's talk.",
     location: "Location",
     labelName: "Name",
     labelEmail: "Email",

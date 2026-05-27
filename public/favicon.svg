@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+  <rect width="120" height="120" rx="24" fill="#0B0C10" />
+  
+  <text x="20" y="82" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="64" font-weight="900" fill="#FFFFFF" letter-spacing="-2">JL</text>
+  
+  <rect x="86" y="68" width="14" height="14" fill="#A87FFB" />
+</svg>

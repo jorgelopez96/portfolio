@@ -52,3 +52,13 @@
   100% { transform: scale(1.8); opacity: 0; }
 }
 .animate-ping-slow { animation: ping-slow 2s ease-out infinite; }
+
+@keyframes carousel {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+.animate-carousel {
+  animation: carousel 25s linear infinite;
+  width: max-content;
+}
+.animate-carousel:hover { animation-play-state: paused; }
