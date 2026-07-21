@@ -39,6 +39,7 @@ export const en = {
       javascript: "JavaScript",
       reactJs: "React JS",
       backend1: "Backend I",
+      backend2: "Backend II",
       devWebUdemy: "Web Development",
     },
   },
