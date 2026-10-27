@@ -1,64 +1,52 @@
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
-  * { box-sizing: border-box; }
   html { scroll-behavior: smooth; }
-  body { background: #080810; color: #fff; font-family: 'Plus Jakarta Sans', sans-serif; }
+  body { @apply bg-ink text-cream font-sans antialiased; }
+  ::selection { @apply bg-accent text-accent-ink; }
 }
 
-@layer utilities {
-  .font-display { font-family: 'Plus Jakarta Sans', sans-serif; }
-  .font-mono { font-family: 'JetBrains Mono', monospace; }
+@layer components {
+  /* Tarjeta del bento: entra con fade y, con mouse, se inclina y la recorre una luz (ver Tile.jsx) */
+  .tile {
+    @apply relative overflow-hidden rounded-[1.25rem] border border-line bg-tile;
+    transform: perspective(1000px) rotateX(var(--rx, 0deg)) rotateY(var(--ry, 0deg));
+    transition: transform 0.3s ease, border-color 0.3s ease, opacity 0.7s ease, translate 0.7s ease;
+    opacity: 0;
+    translate: 0 18px;
+  }
+  .tile.is-in { opacity: 1; translate: 0 0; }
+  .tile:hover { border-color: rgb(167 139 250 / 0.35); }
+  .tile::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background: radial-gradient(360px circle at var(--x, -999px) var(--y, -999px), rgb(167 139 250 / 0.14), transparent 60%);
+  }
+  .label { @apply font-mono text-[11px] uppercase tracking-[0.2em] text-dim; }
+
+  /* Tecnología del Stack: al pasar el mouse da un saltito y se ilumina un instante */
+  .chip { transition: border-color 0.2s ease, color 0.2s ease; }
+  .chip:hover { @apply border-accent text-accent; animation: chip-pop 0.5s ease-out; }
+  .chip:hover img { animation: chip-icon 0.5s ease-out; }
 }
 
-@keyframes fade-in {
-  from { opacity: 0; }
-  to { opacity: 1; }
+@keyframes chip-pop {
+  0% { transform: translateY(0); box-shadow: 0 0 0 0 rgb(167 139 250 / 0); }
+  35% { transform: translateY(-4px); box-shadow: 0 0 18px 2px rgb(167 139 250 / 0.45); }
+  100% { transform: translateY(0); box-shadow: 0 0 0 0 rgb(167 139 250 / 0); }
 }
-@keyframes slide-up {
-  from { opacity: 0; transform: translateY(28px); }
-  to { opacity: 1; transform: translateY(0); }
+@keyframes chip-icon {
+  35% { transform: scale(1.25) rotate(-8deg); }
 }
-@keyframes slide-left {
-  from { opacity: 0; transform: translateX(32px); }
-  to { opacity: 1; transform: translateX(0); }
-}
-.animate-fade-in  { animation: fade-in 0.9s ease forwards; }
-.animate-slide-up { animation: slide-up 0.8s ease forwards; }
-.animate-slide-left { animation: slide-left 0.8s ease forwards; }
-.delay-100 { animation-delay: 0.15s; opacity: 0; }
-.delay-200 { animation-delay: 0.3s;  opacity: 0; }
-.delay-300 { animation-delay: 0.45s; opacity: 0; }
-.delay-400 { animation-delay: 0.6s;  opacity: 0; }
 
-@keyframes spin-slow {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .chip:hover, .chip:hover img { animation: none; }
+  .tile { opacity: 1; translate: none; transition: none; }
 }
-@keyframes spin-reverse {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(-360deg); }
-}
-.animate-spin-slow { animation: spin-slow 30s linear infinite; }
-.animate-spin-reverse { animation: spin-reverse 20s linear infinite; }
-
-@keyframes ping-slow {
-  0% { transform: scale(1); opacity: 0.6; }
-  70% { transform: scale(1.8); opacity: 0; }
-  100% { transform: scale(1.8); opacity: 0; }
-}
-.animate-ping-slow { animation: ping-slow 2s ease-out infinite; }
-
-@keyframes carousel {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
-}
-.animate-carousel {
-  animation: carousel 25s linear infinite;
-  width: max-content;
-}
-.animate-carousel:hover { animation-play-state: paused; }

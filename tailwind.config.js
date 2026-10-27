@@ -4,16 +4,18 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        display: ["Plus Jakarta Sans", "sans-serif"],
+        serif: ["Instrument Serif", "serif"],
+        sans: ["Space Grotesk", "sans-serif"],
         mono: ["JetBrains Mono", "monospace"],
       },
       colors: {
-        brand: {
-          purple: "#7c3aed",
-          violet: "#a855f7",
-          blue: "#3b5bdb",
-          pink: "#c026d3",
-        },
+        ink: "#0e0d13",
+        tile: "#17151e",
+        line: "#26232f",
+        cream: "#f1efe8",
+        muted: "#a19eab",
+        dim: "#6f6c78",
+        accent: { DEFAULT: "#a78bfa", ink: "#1a1230" },
       },
     },
   },

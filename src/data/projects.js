@@ -1,12 +1,32 @@
 export const projects = [
   {
+    id: 3,
+    key: "thunderop",
+    featured: true,
+    tech: ["Svelte", "Tauri", "Rust", "PocketBase", "LiveKit"],
+    status: "deployed",
+    github: "https://github.com/jorgelopez96/thunderop-voice-chat",
+    live: "https://www.thunderop.com",
+    image: "/projects/thunderop.png",
+  },
+  {
+    id: 4,
+    key: "herramientaSp",
+    featured: true,
+    tech: ["React", "TypeScript", "Supabase", "Clerk", "Vitest"],
+    status: "deployed",
+    github: null,
+    live: null,
+    image: "/projects/herramienta-sp.png",
+  },
+  {
     id: 1,
     key: "cuidaTuWallet",
     tech: ["React", "Firebase", "Tailwind", "Vite"],
     status: "deployed",
     github: "https://github.com/jorgelopez96/CuidaTuWallet",
     live: "https://cuida-tu-wallet.vercel.app",
-    image: "/projects/cuida-tu-wallet.png", // reemplazar con screenshot real
+    image: "/projects/cuida-tu-wallet.png",
   },
   {
     id: 2,
@@ -15,6 +35,6 @@ export const projects = [
     status: "deployed",
     github: "https://github.com/jorgelopez96",
     live: "https://osidistech.vercel.app",
-    image: "/projects/osidistech.png", // reemplazar con screenshot real
+    image: "/projects/osidistech.png",
   },
 ];
